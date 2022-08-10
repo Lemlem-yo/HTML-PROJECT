@@ -1,14 +1,12 @@
 *{
     margin: 0;
     padding: 0;
-
 }
-.main{
-    width: 100%;
-    background-image: url(background.jpg);
- 
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("background.jpg");
     background-size: cover;
-    height: 109vh;
 }
 .logo{
     color: tomato;
@@ -48,27 +46,52 @@ ul li a{
 ul li a:hover{
     color: tomato;
 }
-.search{
+.box{
     width: 300px;
-    float: left;
-    margin-top: 15px;
-    margin-left: 150px;
+    padding: 30px;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    background:rgba(0, 0, 0, 0.7) ;
+    text-align: center;
+
 
 }
-.srch{
-    font-family: 'Times New Roman';
-    width: 200px;
-    height: 50px;
-    margin-top: 0px;
-    border: 1px,solid tomato;
-    float: left;
-}
-.btn{
-    width: 100px;
-    height: 40px;
-    background: tomato;
-    border:  2px,tomato;
-    margin-top: 13px;
+.box h1{
+    color:white;
+    text-transform: uppercase;
+    font-family: cursive;
+} 
+.box input[type = "text"],.box input[type ="password"]{
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 3px solid #0367fd;
+    padding: 14px 10px;
+    width: 220px;
     color: white;
-    font-size: 15px;
+    border-radius: 25px;
+    transition: 0.25px;
+} 
+.box input[type = "text"]:focus,.box input[type ="password"]:focus{
+    width: 270px;
+    border-color:tomato;
 }
+.box input[type = "submit"]{
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 3px solid #0367fd;
+    padding: 14px 10px;
+    width: 100px;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+   
+}
+.box input[type = "submit"]:hover{
+    background-color: tomato;
+}
+       
